@@ -1,0 +1,8 @@
+{
+  "name": "ionic.tvbrasil2",
+  "app_id": "8c584901",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
