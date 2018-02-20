@@ -6,13 +6,19 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 
+import { ProgramasPage } from '../pages/programas/programas';
+import { SintonizarPage } from '../pages/sintonizar/sintonizar';
+import { SobrePage } from '../pages/sobre/sobre';
+import { ContatoPage } from '../pages/contato/contato';
+
+
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = HomePage;
+  rootPage: any = ProgramasPage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -21,8 +27,14 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage }
+      { title: 'Assista', component: HomePage },
+      { title: 'List', component: ListPage },
+
+      { title: 'Programas em destaque', component: ProgramasPage },
+      { title: 'Sintonizar', component: SintonizarPage },
+      { title: 'Sobre a TV Brasil', component: SobrePage },
+      { title: 'Contato', component: ContatoPage },
+
     ];
 
   }

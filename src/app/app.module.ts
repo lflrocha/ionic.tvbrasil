@@ -9,11 +9,28 @@ import { ListPage } from '../pages/list/list';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+import { ProgramasPage } from '../pages/programas/programas';
+import { SintonizarPage } from '../pages/sintonizar/sintonizar';
+import { SobrePage } from '../pages/sobre/sobre';
+import { ContatoPage } from '../pages/contato/contato';
+
+import { TvabertaPage } from '../pages/tvaberta/tvaberta';
+import { TvassinaturaPage } from '../pages/tvassinatura/tvassinatura';
+import { TvparabolicaPage } from '../pages/tvparabolica/tvparabolica';
+
+
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    ProgramasPage,
+    SintonizarPage,
+    SobrePage,
+    ContatoPage,
+    TvabertaPage,
+    TvassinaturaPage,
+    TvparabolicaPage
   ],
   imports: [
     BrowserModule,
@@ -23,7 +40,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    ProgramasPage,
+    SintonizarPage,
+    SobrePage,
+    ContatoPage,
+    TvabertaPage,
+    TvassinaturaPage,
+    TvparabolicaPage    
   ],
   providers: [
     StatusBar,

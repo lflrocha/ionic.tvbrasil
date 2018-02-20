@@ -14,3 +14,68 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+body {
+  font-family: 'FiraSans';
+}
+
+p, ion-app{
+  font-family: 'FiraSans';
+  font-style: normal;
+  font-weight: 400;
+}
+
+
+.toolbar-background{
+  background-color: #009fdb;
+}
+
+.toolbar-title{
+  color: #fff;
+}
+
+.bar-button-default:hover:not(.disable-hover),
+.bar-button-clear-default:hover:not(.disable-hover),
+.bar-button-default:hover:not(.disable-hover) {
+  color: #555;
+}
+
+.bar-button-default,
+.bar-button-clear-default,
+.bar-button-default {
+  color: #fff;
+}
+
+.scroll-content {
+  background-repeat: no-repeat;
+}
+
+.fundo-menu {
+  background-color: #00c3fc;
+  background-image: url("../assets/imgs/bg.png");
+  background-size: 100% 100%;
+}
+
+.fundo-menu-item {
+  background-color: rgba(0, 159, 219, 0.8);
+  color: #fff;
+}
+
+
+@mixin aspect-ratio($width, $height) {
+    position: relative;
+    &:before{
+        display: block;
+        content: " ";
+        width: 100%;
+        padding-top: ($height / $width) * 100%;
+    }
+
+    > .content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}

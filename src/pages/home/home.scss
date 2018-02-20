@@ -1,3 +1,16 @@
 page-home {
 
+  .sixteen-nine {
+    @include aspect-ratio(16,9);
+    margin-top: -13px;
+  }
+
+
+  @media screen and (orientation:portrait) {
+    .sixteen-nine {
+      margin: 20px 0;
+    }
+  }
+
+
 }

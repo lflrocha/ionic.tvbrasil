@@ -84,5 +84,52 @@ $colors: (
 // Fonts
 // --------------------------------------------------
 
+
 @import "roboto";
 @import "noto-sans";
+
+@font-face {
+  font-family: 'FiraSans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/FiraSans/400/FiraSans-Regular.otf');
+}
+
+@font-face {
+  font-family: 'FiraSans';
+  font-style: medium;
+  font-weight: 500;
+  src: url('../assets/fonts/FiraSans/600/FiraSans-Medium.otf');
+}
+
+@font-face {
+  font-family: 'FiraSans';
+  font-style: semi-bold;
+  font-weight: 600;
+  src: url('../assets/fonts/FiraSans/600/FiraSans-Medium.otf');
+}
+
+@font-face {
+  font-family: 'FiraSans';
+  font-style: bold;
+  font-weight: 700;
+  src: url('../assets/fonts/FiraSans/700/FiraSans-Bold.otf');
+}
+
+@font-face {
+  font-family: 'FiraSans';
+  font-style: extra-bold;
+  font-weight: 900;
+  src: url('../assets/fonts/FiraSans/900/FiraSans-ExtraBold.otf');
+}
+
+$font-family-base: "FiraSans", sans-serif !default;
+
+body{
+font-family: "FiraSans" !important;
+font-weight: 400 !important;
+}
+
+h1, h2, h3, .toolbar-title, button {
+font-family: "FiraSans" !important;
+}
